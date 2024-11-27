@@ -4,6 +4,8 @@
 #include <iostream>
 #include "ICharacter.hpp"
 
+class	ICharacter;
+
 class AMateria
 {
 protected:
@@ -11,6 +13,7 @@ protected:
 public:
 	AMateria();
 	AMateria(std::string const & type);
+	AMateria(const AMateria& other);
 	~AMateria();
 	AMateria&	operator=(const AMateria& other);
 	std::string const & getType() const; //Returns the materia type
