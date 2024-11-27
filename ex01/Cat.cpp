@@ -2,16 +2,18 @@
 
 Cat::Cat() : Animal("Cat")
 {
+	brain = new Brain();
 	std::cout << "Cat constructor called\n";
 }
 
 Cat::Cat(const Cat &other) : Animal(other.type)
 {
-
+	brain = new Brain();
 	std::cout << "Cat copy constructor called\n";
 }
 
 Cat::~Cat() {
+	delete brain;
 	std::cout << "Cat destructor called\n";
 }
 
