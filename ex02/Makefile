@@ -1,9 +1,9 @@
-NAME	= polymorphism
+NAME	= abstract
 
 CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 
-SRCS	= Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp\
+SRCS	= Animal.cpp Dog.cpp Cat.cpp Brain.cpp WrongAnimal.cpp WrongCat.cpp\
           main.cpp
 
 OBJS	= $(SRCS:.cpp=.o)
